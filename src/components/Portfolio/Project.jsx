@@ -25,9 +25,6 @@ const Project = ({ dataProjects }) => {
 	return (
 		<div className="row d-flex justify-content-between">
 			{dataProjects.map((project, index) => {
-				{
-					console.log(project);
-				}
 				return (
 					<div
 						className="card col-lg-4"
@@ -40,9 +37,12 @@ const Project = ({ dataProjects }) => {
 									src={`${project.img}`}
 									className="card-img-top"
 									alt="New style"
+									key={crypto.randomUUID()}
 								/>
-								<h5 className="card-title">{project.nameProject}</h5>
-								<p>{project.detail}</p>
+								<h5 className="card-title" key={crypto.randomUUID()}>
+									{project.nameProject}
+								</h5>
+								<p key={crypto.randomUUID()}>{project.detail}</p>
 							</Button>
 						</WhileHover>
 
@@ -63,12 +63,17 @@ const Project = ({ dataProjects }) => {
 									</video>
 								</Container>
 
-								<p className="description p-2">{project.description}</p>
+								<p className="description p-2" key={crypto.randomUUID()}>
+									{project.description}
+								</p>
 								<div className="technologie">
 									<h4 className="px-2 pb-2">Front-end</h4>
-									{project.front.map((tech) => {
+									{project.front?.map((tech) => {
 										return (
-											<span className="border px-3 xs:px-2 py-1 rounded shadow-sm mx-2">
+											<span
+												className="border px-3 xs:px-2 py-1 rounded shadow-sm mx-2"
+												key={crypto.randomUUID()}
+											>
 												{tech}
 											</span>
 										);
@@ -77,7 +82,10 @@ const Project = ({ dataProjects }) => {
 									{project.back && <h4 className="p-2 pt-4">Back-end</h4>}
 									{project.back?.map((tech) => {
 										return (
-											<span className="border px-3 xs:px-2 py-1 rounded shadow-sm mx-2">
+											<span
+												className="border px-3 xs:px-2 py-1 rounded shadow-sm mx-2"
+												key={crypto.randomUUID()}
+											>
 												{tech}
 											</span>
 										);
@@ -87,8 +95,8 @@ const Project = ({ dataProjects }) => {
 									<h4 className="p-2 pt-4">Fonctionnalités Clés </h4>
 								)}
 								<ul>
-									{project.fonction.map((fonc) => {
-										return <li>{fonc}</li>;
+									{project.fonction?.map((fonc) => {
+										return <li key={crypto.randomUUID()}>{fonc}</li>;
 									})}
 								</ul>
 							</Modal.Body>

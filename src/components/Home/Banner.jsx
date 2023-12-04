@@ -1,14 +1,14 @@
-// import ParticlesBackground from "../Particles/ParticlesBackground";
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import "animate.css";
-
-import Avatar from "/img/avatar3.webp";
+import Avatar from "/img/avt2.webp";
 import AnimatedLetters from "../Aminations/AnimatedLetters";
-// import
-// import FadeInWhenVisible from "../Aminations/FideInWhenVisibe.jsx";
-// import FadeIn from "../Aminations/FadeIn.jsx";
-// import WhileHover from "../Aminations/WhileHover.jsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+	faGithub,
+	faLinkedin,
+	faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Banner = () => {
 	const [letterClass, setLetterClass] = useState("text-animate");
@@ -48,8 +48,7 @@ const Banner = () => {
 			<div>
 				<article className="hero-text mx-2">
 					<div className="d-flex justify-content-center">
-						<img src={Avatar} alt="Avatar" id="avatar" />
-						<h1 className="hero-title pb-4 display-1 fw-semibold text-center pe-4 me-lg-5">
+						<h1 className="hero-title display-1 fw-semibold text-center pe-5 pt-5">
 							<AnimatedLetters
 								letterClass={letterClass}
 								strArray={nameArray}
@@ -62,9 +61,10 @@ const Banner = () => {
 								idx={17}
 							/>
 						</h1>
+						<img src={Avatar} alt="Avatar" id="avatar" />
 					</div>
 
-					<h3 className="hero-desc fw-normal text-center mx-auto mt-3 mb-5 pe-4 py-4">
+					<h3 className="hero-desc fw-normal text-center mx-auto mt-3 mb-5 py-4">
 						À la recherche d'une alternance en développement web, avec un rythme
 						de 3 semaines en entreprise et une semaine à l'école, à partir du 11
 						mars 2024. N'hésitez pas à me contacter !
@@ -91,6 +91,23 @@ const Banner = () => {
 				{/* <ParticlesBackground /> */}
 			</div>
 			{/* </WhileHover> */}
+			<ul id="listIcons" class="ps-0">
+				<li>
+					<a href="https://www.linkedin.com/in/phuong-thao-nguyen-devweb/">
+						<FontAwesomeIcon icon={faLinkedin} className="icon" />
+					</a>
+				</li>
+				<li class="list-unstyled">
+					<a href="https://github.com/ThaoNGUYEN1411">
+						<FontAwesomeIcon icon={faGithub} className="icon" />
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<FontAwesomeIcon icon={faTwitter} className="icon" />
+					</a>
+				</li>
+			</ul>
 			<Loader type="pacman" />
 		</section>
 	);

@@ -8,11 +8,11 @@
   
   /* background image */
 .bgimage {
-    height: 90vh;
+    /* height: 90vh; */
     background: url("/img/bg-final.webp");
     background-size: cover;
     position: relative;
-    min-height: 85vh;
+    /* min-height: 85vh; */
   }
 /* .bg-nav {
     background-color: #f7e8d9 !important;
@@ -47,14 +47,16 @@
   
   #avatar {
     max-width: 230px;
-    height: auto;
-    border-radius: 40%;
-    margin-right: 40px;
+    /* height: 90%; */
+    border-radius: 15%;
+    /* margin: 10px; */
+    /* margin-right: 40px; */
     transform: translateY(-50px);
+    /* transform: translateX(-50px); */
 
     /* border: 3px solid rgb(243, 200, 163); */
-    animation: fadeIn 1s 2.8s backwards;
-    box-shadow: 0 0 10px rgb(3, 41, 78);
+    animation: fadeIn 1s 1.4s backwards;
+    /* box-shadow: 0 0 10px rgb(153, 158, 162); */
   }
   h1.hero-title {
     letter-spacing: 1px;
@@ -70,7 +72,7 @@
     transform: translateY(-50px);
   }
   .hero-text {
-    margin-top: 10%;
+    margin-top: 8%;
   }
   
   .btn-sub {
@@ -110,31 +112,31 @@
   }
   
   /* ------------debut de icon----------------- */
-  #momo i {
+  .icon{
     color: rgb(30, 29, 29);
   }
-  #momo i:hover {
+  #listIcons i:hover {
     color: rgb(9, 9, 9);
   }
   @media screen and (min-width: 577px) {
-    #momo {
+    #listIcons {
       width: 40px;
-      margin-left: 20px;
+      /* margin-left: 20px; */
       position: fixed;
-      top: calc(50vh - 160px);
+      top: calc(50vh - 30px);
       right: 40px;
       list-style: none;
     }
   
-    #momo li {
+    #listIcons li {
       display: block;
       width: 40px;
       height: 40px;
       text-align: center;
-      margin: 2px 0;
+      margin: 0 auto;
     }
   
-    #momo li a {
+    #listIcons li a {
       display: block;
       width: 40px;
       height: 40px;
@@ -147,7 +149,7 @@
       margin: 10px;
     }
   
-    #momo li a:hover {
+    #listIcons li a:hover {
       background: rgb(62, 123, 220);
       color: white;
       width: 50px;
@@ -175,7 +177,7 @@
       background: white;
     }
     /* --------- icons desencent en bas----- */
-    #momo {
+    #listIcons {
       width: 40px;
       margin-left: 20px;
       position: fixed;
@@ -184,7 +186,7 @@
       display: flex;
     }
   
-    #momo li {
+    #listIcons li {
       display: block;
       width: 40px;
       height: 40px;
@@ -193,7 +195,7 @@
       margin: 2px 0;
     }
   
-    #momo li a {
+    #listIcons li a {
       display: block;
       width: 40px;
       height: 40px;
@@ -205,7 +207,7 @@
       color: rgb(207, 34, 34);
     }
   
-    #momo li a:hover {
+    #listIcons li a:hover {
       background: wheat;
       color: white;
       width: 50px;
@@ -221,7 +223,7 @@
     }
     .bt-style {
       max-width: 80vw;
-      margin-bottom: 20px;
+      /* margin-bottom: 20px; */
       text-align: center;
     }
   }
@@ -243,7 +245,8 @@
     height: auto;
   }
   .projet-tech {
-    background: #e6ddd2;
+    /* background: #e6ddd2; */
+    background: #EFEFEF;
     padding: 50px 0;
     margin-top: 20px;
   }
@@ -260,7 +263,7 @@
     border-radius: 10px;
   }
   #contact {
-    background: #ededed;
+    background: #EFEFEF;
   }
   /* -------------footer---------------- */
   footer {

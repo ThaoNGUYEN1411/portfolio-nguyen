@@ -28,7 +28,7 @@ input[type='text'],
   input[type='email'] {
     width: 100%;
     border: 0;
-    background: #F7E8D9;
+    background: #CFE2FF;
     height: 50px;
     font-size: 16px;
     color: #262222;
@@ -39,7 +39,8 @@ input[type='text'],
   textarea {
     width: 100%;
     border: 0;
-    background: #F7E8D9;
+    /* background: #F7E8D9; */
+    background: #CFE2FF;
     height: 50px;
     font-size: 16px;
     color: #fff;
