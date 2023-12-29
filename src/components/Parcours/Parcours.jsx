@@ -4,7 +4,7 @@ const Parcours = () => {
 			<div className="container mt-4 pt-4">
 				<h2 className="text-center text-uppercase pb-3 pb-4 mt-3">Parcours</h2>
 				<div className="row">
-					<div className="col-lg-6 border-end mb-5">
+					<div className="col-lg-6 mb-lg-5 mb-sm-3 border-end mb-5">
 						<h3 className="text-danger text-center mb-4">Formation</h3>
 						<article className="mt-3">
 							<h4 className="h4-color">
@@ -65,7 +65,7 @@ const Parcours = () => {
 							<p>Hanoi, Vietnam 2010 - 2014</p>
 						</article>
 					</div>
-					<div className="col-lg-6 mb-5 ps-5">
+					<div className="col-lg-6 mb-lg-5 mb-sm-3 ps-lg-5">
 						<h3 className="text-danger text-center mb-4">
 							Parcours professionnel
 						</h3>

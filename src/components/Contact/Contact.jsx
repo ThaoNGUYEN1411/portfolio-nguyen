@@ -1,5 +1,4 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-// import {useForm} from react-hook-form;
 import "./Contact.css";
 import "leaflet/dist/leaflet.css";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -42,24 +41,24 @@ const Contact = () => {
 	};
 	return (
 		<div className="bg-contact py-5" id="contact">
-			<section className="contact-page container">
+			<section className="container">
 				<div className="text-center">
 					<h2 className="text-uppercase">Contact</h2>
 					<div className="info-contact">
-						<p className="info pb-2">
-							<span>Thao Nguyen</span>
-							<span>
+						<ul className="info pb-2 row">
+							<li className="col-lg-4 col-sm-12">Thao Nguyen</li>
+							<li className="col-lg-4 col-sm-12">
 								<FontAwesomeIcon icon={faPhone} className="icon-contact" />
 								06 79 40 73 83
-							</span>
-							<span>
+							</li>
+							<li className="col-lg-4 col-sm-12">
 								<FontAwesomeicon-contact
 									icon={faEnvelope}
 									className="icon-contact"
 								/>
 								phuongthaolyon@gmail.com
-							</span>
-						</p>
+							</li>
+						</ul>
 						{/* <p>
 							N'hésitez pas à m'envoyer un message ou à me contacter si vous
 							avez des questions,
@@ -71,7 +70,7 @@ const Contact = () => {
 					</div>
 				</div>
 				<div className="row">
-					<div className="mt-2 col-lg-6 col-sm-6 col-sm-12">
+					<div className="mt-2 col-lg-6 col-sm-6 col-sm-12 pl-sm-0">
 						<form ref={refForm} onSubmit={sendEmail}>
 							<ul className="pd-0 m-0 contact-form">
 								<li className="half">

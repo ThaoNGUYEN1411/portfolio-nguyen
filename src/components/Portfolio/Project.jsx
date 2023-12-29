@@ -27,8 +27,8 @@ const Project = ({ dataProjects }) => {
 			{dataProjects.map((project, index) => {
 				return (
 					<div
-						className="card col-lg-4"
-						style={{ width: "25rem" }}
+						className="card col-lg-4 col-sm-12 projet mt-3"
+						// style={{ width: "25rem" }}
 						key={project.id}
 					>
 						<WhileHover>

@@ -7,11 +7,11 @@ const About = () => {
 			<div className="container mt-4 pt-4">
 				<h2 className="text-center text-uppercase pb-3">A Propos</h2>
 				<div className="row mt-4">
-					<div className="col-lg-3">
+					<div className="col-lg-3 col-sm-12 text-center mb-4">
 						<img
 							src={ImageAbout}
 							className="imageAboutPage"
-							alt="Developpeuse"
+							alt="illustration d'une developpeuse"
 						/>
 					</div>
 					<div className="col-lg-9">

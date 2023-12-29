@@ -133,6 +133,12 @@ h3.hero-desc {
   }
   /* sm */
 }
+
+@media(min-width: 992px){
+  .projet{
+    width: 25rem !important;
+  }
+}
 @media screen and (max-width: 576px) {
   body {
     margin: 0;
@@ -201,6 +207,15 @@ h3.hero-desc {
     text-align: center;
   }
 }
+@media (max-width:992px){
+  .projet{
+    justify-content: space-around !important;
+  }
+  .contact-form, .info{
+    padding-left: 0;
+  }
+
+}
 /* -----------------fin d'icons---------------- */
 
 /* responsive */
@@ -209,6 +224,7 @@ h3.hero-desc {
 }
 
 /* ------------ portfolio---------- */
+
 .list-logo {
   justify-content: space-around;
   flex-wrap: wrap;
@@ -225,7 +241,7 @@ h3.hero-desc {
   margin-top: 20px;
 }
 /* -----------contact----------- */
-#contact {
+/* #contact {
   min-height: 0vh;
 }
 #info {
@@ -238,8 +254,8 @@ h3.hero-desc {
 }
 #contact {
   background: #efefef;
-}
-/* -------------footer---------------- */
+} */
+-------------footer----------------
 footer {
   background: #4791d2;
 }

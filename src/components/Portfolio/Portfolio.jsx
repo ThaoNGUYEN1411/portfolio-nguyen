@@ -120,33 +120,6 @@ const Portfolio = () => {
 							</li>
 						);
 					})}
-					{/* <li>
-						<img src={LogoCSS} alt="" className="logo-tech" />
-					</li>
-					<li>
-						<img src={LogoJs} alt="" className="logo-tech" />
-					</li>
-					<li>
-						<img src={LogoReact} alt="" className="logo-tech" />
-					</li>
-					<li>
-						<img src={LogoNode} alt="" className="logo-tech" />
-					</li>
-					<li>
-						<img src={LogoGit} alt="" className="logo-tech" />
-					</li>
-					<li>
-						<img src={LogoWordPress} alt="" className="logo-tech" />
-					</li>
-					<li>
-						<img src={LogoFigma} alt="" className="logo-tech" />
-					</li>
-					<li>
-						<img src={LogoPhotoshop} alt="" className="logo-tech" />
-					</li>
-					<li>
-						<img src={LogoBootstrap} alt="" className="logo-tech" />
-					</li> */}
 				</ul>
 			</section>
 		</div>
