@@ -5,7 +5,41 @@ import "leaflet/dist/leaflet.css";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 const Contact = () => {
+	const refForm = useRef();
+
+	const sendEmail = (elm) => {
+		elm.preventDefault();
+		const nameUser = elm.target.name.value;
+		const emailUser = elm.target.email.value;
+		const messageSujet = elm.target.sujet.value;
+		const messageReceive = elm.target.message.value;
+
+		console.log(nameUser, emailUser, messageReceive, messageSujet);
+		const templateParams = {
+			to_name: nameUser,
+			from_name: emailUser,
+			sujet: messageSujet,
+			message: messageReceive,
+		};
+		emailjs
+			.send(
+				"service_orwn3ni",
+				"template_548zp9x",
+				templateParams,
+				"CobpUiWT8W_ddgSz6",
+			)
+			.then(
+				(response) => {
+					console.log("SUCCESS!");
+				},
+				(err) => {
+					console.log("FAILED...");
+				},
+			);
+	};
 	return (
 		<div className="bg-contact py-5" id="contact">
 			<section className="contact-page container">
@@ -38,7 +72,7 @@ const Contact = () => {
 				</div>
 				<div className="row">
 					<div className="mt-2 col-lg-6 col-sm-6 col-sm-12">
-						<form action="">
+						<form ref={refForm} onSubmit={sendEmail}>
 							<ul className="pd-0 m-0 contact-form">
 								<li className="half">
 									<input

@@ -110,8 +110,13 @@ const Portfolio = () => {
 				<ul className="list-logo d-flex list-unstyled">
 					{listTechnique.map((logo) => {
 						return (
-							<li>
-								<img src={`${logo}`} alt="" className="logo-tech" />
+							<li key={crypto.randomUUID()}>
+								<img
+									src={`${logo}`}
+									alt=""
+									className="logo-tech"
+									key={crypto.randomUUID()}
+								/>
 							</li>
 						);
 					})}
