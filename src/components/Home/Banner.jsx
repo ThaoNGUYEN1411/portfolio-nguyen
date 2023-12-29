@@ -80,7 +80,7 @@ const Banner = () => {
 						En savoir plus
 					</a>
 					<a
-						href="/public/img/CV_NGUYEN_Dev_Web_v2.pdf"
+						href="/public/img/CV-NGUYEN-alternance.pdf"
 						className="btn btn-primary bt-style"
 						target="_blank"
 						rel="noreferrer"

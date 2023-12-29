@@ -17,7 +17,6 @@ const Contact = () => {
 		const messageSujet = elm.target.sujet.value;
 		const messageReceive = elm.target.message.value;
 
-		console.log(nameUser, emailUser, messageReceive, messageSujet);
 		const templateParams = {
 			to_name: nameUser,
 			from_name: emailUser,
@@ -32,11 +31,12 @@ const Contact = () => {
 				"CobpUiWT8W_ddgSz6",
 			)
 			.then(
-				(response) => {
-					console.log("SUCCESS!");
+				() => {
+					alert("Votre message a été envoyé avec succès!");
+					window.location.reload(false);
 				},
-				(err) => {
-					console.log("FAILED...");
+				() => {
+					alert("L'envoi du message a échoué! Merci de réessayer.");
 				},
 			);
 	};
