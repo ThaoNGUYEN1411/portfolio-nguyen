@@ -5,6 +5,7 @@ import LogoHtml from "/img/html.webp";
 import LogoCSS from "/img/css-removebg-preview.webp";
 import LogoJs from "/img/js.webp";
 import LogoReact from "/img/React-icon.svg.webp";
+import Angular from "/img/angular1.webp";
 import LogoNode from "/img/node.webp";
 import LogoGit from "/img/git-removebg-preview.webp";
 import LogoWordPress from "/img/wp-removebg-preview.webp";
@@ -58,35 +59,42 @@ const Portfolio = () => {
 		{
 			id: 3,
 			nameProject: "NewStyle",
-			detail: "Un site de journal sur les styles de la femme",
+			detail:
+				"Un site de journalisme dédié aux styles féminins, actuellement en cours de développement.",
 			img: "/img/newStyle.webp",
-			video: "",
+			video: "/video/newstyle.mp4",
 			description: "Un site de journal sur les styles de la femme",
 			front: ["HTML", "CSS"],
-
-			// fonction: [
-			// 	"Créer un compte",
-			// 	"Connexion et déconnexion",
-			// 	"Itinéraires protégés",
-			// 	"Authentification",
-			// 	"Rechercher des produits rapidement avec une barre de recherche",
-			// 	"Catalogue de produits avec filtres",
-			// 	"Ajouter des avis, évaluations et commentaires sur un produit",
-			// 	"Ajouter et supprimer le produit favori",
-			// ],
 			linkGithub: "https://github.com/ThaoNGUYEN1411/NewStyle.github.io.git",
-			linkSite: "https://github.com/ThaoNGUYEN1411/NewStyle.github.io",
+			linkSite: "https://thaonguyen1411.github.io/NewStyle.github.io/",
 		},
 		// {
-		// 	id: 3,
-		// 	nameProject: "NewStyle",
-		// 	detail: "Un site de journal sur les styles de la femme",
-		// 	description: "Un site de journal sur les styles de la femme",
-		// 	front: "[HTML, CSS]",
-		// 	// fonction: "[a,b,c]",
-		// 	linkGithub: "https://github.com/ThaoNGUYEN1411/NewStyle.github.io.git",
-		// 	linkSite: "https://github.com/ThaoNGUYEN1411/NewStyle.github.io",
+		// 	id: 4,
+		// 	nameProject: "Agency",
+		// 	detail:
+		// 		"Un site présentant une agence, actuellement en cours de développement",
+		// 	img: "/img/agency.webp",
+		// 	video: "/video/agency.mp4",
+		// 	description:
+		// 		"Un site présentant une agence, actuellement en cours de développement",
+		// 	front: ["HTML", "CSS", "REACT"],
+		// 	linkGithub: "https://github.com/ThaoNGUYEN1411/Agency.git",
+		// 	linkSite: "https://agency-thaonguyen1411.vercel.app/",
 		// },
+	];
+
+	const listTechnique = [
+		LogoHtml,
+		LogoCSS,
+		LogoJs,
+		LogoReact,
+		Angular,
+		LogoNode,
+		LogoGit,
+		LogoWordPress,
+		LogoFigma,
+		LogoPhotoshop,
+		LogoBootstrap,
 	];
 	return (
 		<div className="projet-tech container-fluid" id="lien-text">
@@ -100,10 +108,14 @@ const Portfolio = () => {
 					STACK TECHNIQUE
 				</h3>
 				<ul className="list-logo d-flex list-unstyled">
-					<li>
-						<img src={LogoHtml} alt="" className="logo-tech" />
-					</li>
-					<li>
+					{listTechnique.map((logo) => {
+						return (
+							<li>
+								<img src={`${logo}`} alt="" className="logo-tech" />
+							</li>
+						);
+					})}
+					{/* <li>
 						<img src={LogoCSS} alt="" className="logo-tech" />
 					</li>
 					<li>
@@ -129,7 +141,7 @@ const Portfolio = () => {
 					</li>
 					<li>
 						<img src={LogoBootstrap} alt="" className="logo-tech" />
-					</li>
+					</li> */}
 				</ul>
 			</section>
 		</div>

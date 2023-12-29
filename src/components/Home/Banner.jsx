@@ -64,9 +64,9 @@ const Banner = () => {
 						<img src={Avatar} alt="Avatar" id="avatar" />
 					</div>
 
-					<h3 className="hero-desc fw-normal text-center mx-auto mt-3 mb-5 py-4">
+					<h3 className="hero-desc fw-normal text-center mx-auto mt-5 mb-5">
 						À la recherche d'une alternance en développement web, avec un rythme
-						de 3 semaines en entreprise et une semaine à l'école, à partir du 11
+						de 3 semaines en entreprise et une semaine à l'école, à partir du 07
 						mars 2024. N'hésitez pas à me contacter !
 					</h3>
 				</article>
@@ -91,24 +91,27 @@ const Banner = () => {
 				{/* <ParticlesBackground /> */}
 			</div>
 			{/* </WhileHover> */}
-			<ul id="listIcons" class="ps-0">
+			<ul id="listIcons" className="ps-0">
 				<li>
-					<a href="https://www.linkedin.com/in/phuong-thao-nguyen-devweb/">
+					<a
+						href="https://www.linkedin.com/in/phuong-thao-nguyen-devweb/"
+						target="blank"
+					>
 						<FontAwesomeIcon icon={faLinkedin} className="icon" />
 					</a>
 				</li>
-				<li class="list-unstyled">
-					<a href="https://github.com/ThaoNGUYEN1411">
+				<li className="list-unstyled">
+					<a href="https://github.com/ThaoNGUYEN1411" target="blank">
 						<FontAwesomeIcon icon={faGithub} className="icon" />
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<FontAwesomeIcon icon={faTwitter} className="icon" />
 					</a>
 				</li>
 			</ul>
-			<Loader type="pacman" />
+			{/* <Loader type="pacman" /> */}
 		</section>
 	);
 };

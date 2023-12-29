@@ -15,11 +15,14 @@ const Contact = () => {
 						<p className="info pb-2">
 							<span>Thao Nguyen</span>
 							<span>
-								<FontAwesomeIcon icon={faPhone} className="icon" />
+								<FontAwesomeIcon icon={faPhone} className="icon-contact" />
 								06 79 40 73 83
 							</span>
 							<span>
-								<FontAwesomeIcon icon={faEnvelope} className="icon" />
+								<FontAwesomeicon-contact
+									icon={faEnvelope}
+									className="icon-contact"
+								/>
 								phuongthaolyon@gmail.com
 							</span>
 						</p>

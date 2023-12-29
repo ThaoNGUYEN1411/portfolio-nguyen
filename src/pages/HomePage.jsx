@@ -6,6 +6,7 @@ import Portfolio from "../components/Portfolio/Portfolio";
 import Parcours from "../components/Parcours/Parcours";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
+import ArrowPointing from "../components/ArrowPointing/ArrowPointing";
 
 const HomePage = () => {
 	return (
@@ -16,6 +17,7 @@ const HomePage = () => {
 			<Portfolio />
 			<Parcours />
 			<Contact />
+			<ArrowPointing />
 			<Footer />
 		</>
 	);

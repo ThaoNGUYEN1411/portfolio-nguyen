@@ -35,14 +35,16 @@ const Project = ({ dataProjects }) => {
 							<Button variant="" onClick={() => handleShow(index)}>
 								<img
 									src={`${project.img}`}
-									className="card-img-top"
+									className="card-img-top mt-3"
 									alt="New style"
 									key={crypto.randomUUID()}
 								/>
-								<h5 className="card-title" key={crypto.randomUUID()}>
-									{project.nameProject}
-								</h5>
-								<p key={crypto.randomUUID()}>{project.detail}</p>
+								<div className="my-2">
+									<h5 className="card-title" key={crypto.randomUUID()}>
+										{project.nameProject}
+									</h5>
+									<p key={crypto.randomUUID()}>{project.detail}</p>
+								</div>
 							</Button>
 						</WhileHover>
 
