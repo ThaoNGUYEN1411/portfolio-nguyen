@@ -60,6 +60,7 @@ h3.hero-desc {
 .bt-style {
   padding: 5px 20px;
   margin-left: 40px;
+  margin-top: 15px;
   font-size: 1.2rem;
   text-align: center;
   box-shadow: 0 0 10px rgb(3, 41, 78);
