@@ -116,9 +116,9 @@ const Contact = () => {
 					</div>
 					<div className="col-lg-6 col-sm-6 col-sm-12 mt-4">
 						<div className="map-wrap">
-							<MapContainer center={[48.828508, 2.2188068]} zoom={13}>
+							<MapContainer center={[48.75068, 2.298641716]} zoom={13}>
 								<TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-								<Marker position={[48.828508, 2.2188068]}>
+								<Marker position={[48.75068, 2.298641716]}>
 									<Popup>Thao NGUYEN</Popup>
 								</Marker>
 							</MapContainer>
